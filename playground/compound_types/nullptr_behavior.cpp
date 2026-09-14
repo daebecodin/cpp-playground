@@ -9,6 +9,8 @@ using namespace rpt;
 
 int main()
 {
+
+    // hello
     cout << boolalpha;
     header(
       "Null Pointer Behavior",
