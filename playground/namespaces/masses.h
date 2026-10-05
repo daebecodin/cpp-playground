@@ -1,6 +1,6 @@
 #pragma once 
 
-namespace Values
+namespace Constants
 {
     constexpr double earthMass {4.87e24};
 }

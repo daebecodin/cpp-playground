@@ -1,8 +1,11 @@
 #include <iostream>
 #include "foo.h"
 #include "bar.h"
-#include "gravity.h"
+#include "constants.h"
 #include "masses.h"
+#include "physix.h"
+
+double getEarthGrav();
 
 void print() 
 {
@@ -18,8 +21,9 @@ int main()
     Bar::print();
     ::print(); // explicitly calls print at the global scope
 
-    std::cout << "Earth's Gravity: "<< Values::earthGrav << '\n';
-    std::cout << "Earth's Mass: " << Values::earthMass << '\n';
+    std::cout << "Earth's Gravity: " << Constants::earthGrav << '\n';
+    std::cout << "Random Instanteous Velocity: " << Motion::instanteousVelocity(5, getEarthGrav()) << '\n';
+    std::cout << "Earth's Mass: " << Constants::earthMass << '\n';
     return 0;
 
 }
