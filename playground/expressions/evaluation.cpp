@@ -11,6 +11,11 @@ int main ()
 
     d = i = 3.5;
     i = d = 3.5;
+
+    double dval; int ival; int *pi;
+    dval = ival = 0;
+    pi = &ival;
+
    
 
     cout << n << '\n';
